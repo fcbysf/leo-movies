@@ -8,21 +8,23 @@ import MoviesPage from "./MoviesPage";
 import TvShowsPage from "./TvShowsPage";
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/movies/:page" element={<MoviesPage />} />
-        <Route path="/movies/:page/:mvId" element={<Movie />}/>
-        <Route path="/tvShows" element={<TvShows />} />
-        <Route path="/tvShows/:page" element={<TvShowsPage />} />
-        <Route path="/tvShows/:page/:tvId" element={<TvShow />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="containAll">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:page" element={<MoviesPage />} />
+          <Route path="/movies/:page/:mvId" element={<Movie />} />
+          <Route path="/tvShows" element={<TvShows />} />
+          <Route path="/tvShows/:page" element={<TvShowsPage />} />
+          <Route path="/tvShows/:page/:tvId" element={<TvShow />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
-export function NavBar({children}) {
+export function NavBar({ children }) {
   const style = ({ isActive }) => {
     if (isActive)
       return {
