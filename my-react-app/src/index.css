@@ -1,0 +1,82 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background: url('images/cinemabg.webp') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+header{
+  display: flex;
+  gap: 100px;
+  padding: 0px 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.445);
+  padding: 3px 0px;
+  border-radius:40px;
+  z-index: 1;
+  margin-right: 80px;
+}
+header nav a{
+  opacity: .8;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin: 0 10px;
+  transition:  1s ease-in-out;
+}
+.loginbtn{
+  font-size: 1.1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 30px;
+  padding: 17px 60px;
+  border: 0;
+  font-weight: 600;
+  background-color: rgba(51, 51, 51, 0.445);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.btns{
+  width: fit-content;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.616);
+    position: relative;
+  margin: auto;
+  right: -160px;
+  bottom: -70px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.btns button{
+  background-color: black;
+  box-shadow: 2px 2px 4px rgba(22, 22, 22, 0.801),
+  -2px -2px 4px rgba(22, 22, 22, 0.801);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.search{
+  width: 240px;
+  padding: 17px;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  background-color: rgba(51, 51, 51, 0.445);
+  color: rgba(255, 255, 255, 0.788);
+}
