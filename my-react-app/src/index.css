@@ -3,16 +3,18 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+.imgofall{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+}
 .containAll{
+  position: relative;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   height: 100vh;
-  background: url('images/cinemabg.webp') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
 }
 header{
   display: flex;

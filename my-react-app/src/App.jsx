@@ -9,6 +9,7 @@ import TvShowsPage from "./TvShowsPage";
 export default function App() {
   return (
     <div className="containAll">
+      <img src="images/cinemabg.webp" alt="" className="imgofall"/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
